@@ -6,7 +6,6 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix='%', case_insensitive=True)
 
 my_secret = os.environ['REDBOT']
-client = discord.Client()
 extensions = ['cogs.Administrator']
 
 if __name__ == '__main__':
