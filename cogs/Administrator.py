@@ -9,7 +9,6 @@ class Administrator(commands.Cog):
     async def remove_channel(self, ctx, *channel: d.TextChannel):
        
         if ctx.author.guild_permissions.manage_channels:
-        
             for i in channel:
                 await i.delete()
                 mbed = d.Embed(
